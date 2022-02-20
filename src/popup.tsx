@@ -14,6 +14,7 @@ const Popup = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       setCurrentURL(tabs[0].url);
     });
+    document.body.style.background = 'red';
   }, []);
 
   const changeBackground = () => {
